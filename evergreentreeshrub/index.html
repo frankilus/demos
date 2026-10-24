@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Evergreen Tree &amp; Shrub — Tree Care in Hollis, Queens</title>
+    <meta name="description" content="Tree pruning, removal, stump grinding and shrub care in Hollis and across Queens, NY. Take the 60-second Tree Health Check, or call (516) 996-7992 — open 24 hours." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,700;0,800;1,500&family=Karla:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5efe0;
+        --bg-soft: #efe7d2;
+        --surface: #fffdf4;
+        --surface-2: #fbf6e7;
+        --ink: #22301f;
+        --ink-soft: #46543f;
+        --muted: #68755c;
+        --pine: #1e4630;
+        --pine-deep: #12301f;
+        --pine-ink: #0e2a1a;
+        --moss: #4c7a4f;
+        --leaf: #7ba05b;
+        --leaf-soft: #dce8c8;
+        --amber: #dfa12f;
+        --amber-deep: #b57e1d;
+        --amber-ink: #4a3405;
+        --rust: #b03a24;
+        --rust-deep: #8e2c1a;
+        --line: #ddd0b2;
+        --line-soft: #e7ddc4;
+        --on-pine: #f2ecd9;
+        --on-pine-soft: #c9d6bd;
+        --shadow: 0 18px 40px -18px rgba(28, 48, 25, .35);
+        --shadow-sm: 0 8px 22px -10px rgba(28, 48, 25, .28);
+        --radius: 18px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --bg: #0f1810;
+          --bg-soft: #131f14;
+          --surface: #18251a;
+          --surface-2: #1c2b1e;
+          --ink: #ece5cf;
+          --ink-soft: #c6cdb4;
+          --muted: #9aa78c;
+          --pine: #2a5c40;
+          --pine-deep: #173a26;
+          --pine-ink: #0c2115;
+          --moss: #6f9c72;
+          --leaf: #93b874;
+          --leaf-soft: #2a3d27;
+          --amber: #e8b34a;
+          --amber-deep: #d99f2e;
+          --amber-ink: #2e2003;
+          --rust: #d05a3c;
+          --rust-deep: #b4442a;
+          --line: #33452f;
+          --line-soft: #2a3a28;
+          --on-pine: #f2ecd9;
+          --on-pine-soft: #c2d2b4;
+          --shadow: 0 18px 40px -18px rgba(0, 0, 0, .6);
+          --shadow-sm: 0 8px 22px -10px rgba(0, 0, 0, .55);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Karla", system-ui, -apple-system, sans-serif;
+        font-size: 17px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, .serif { font-family: "Bitter", Georgia, serif; }
+      a { color: var(--pine); }
+      img, svg { display: block; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+      /* ---------- Emergency strip ---------- */
+      .storm-strip {
+        background: var(--rust);
+        color: #fdf3ec;
+        text-align: center;
+        padding: 9px 16px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .01em;
+      }
+      .storm-strip a { color: #ffe3a1; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+      .storm-strip .bolt { display: inline-block; margin-right: 6px; }
+
+      /* ---------- Header ---------- */
+      header.site {
+        position: sticky; top: 0; z-index: 40;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .header-in { display: flex; align-items: center; gap: 14px; padding: 12px 0; }
+      .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; color: var(--ink); min-width: 0; }
+      .brand-mark {
+        width: 44px; height: 44px; flex: none; border-radius: 13px;
+        background: var(--pine); display: grid; place-items: center;
+        box-shadow: var(--shadow-sm);
+      }
+      .brand-name { font-family: "Bitter", serif; font-weight: 800; font-size: 20px; line-height: 1.05; }
+      .brand-sub { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+      .header-spacer { flex: 1; }
+      .status-pill {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: var(--surface); border: 1px solid var(--line);
+        border-radius: 999px; padding: 7px 13px; font-size: 14px; font-weight: 700; color: var(--ink-soft);
+        white-space: nowrap;
+      }
+      .status-dot { width: 9px; height: 9px; border-radius: 50%; background: #58a05c; box-shadow: 0 0 0 4px rgba(88,160,92,.18); flex: none; }
+      .status-pill.closed .status-dot { background: var(--rust); box-shadow: 0 0 0 4px rgba(176,58,36,.16); }
+      .call-btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: var(--amber); color: var(--amber-ink);
+        font-weight: 800; font-size: 15.5px; text-decoration: none;
+        padding: 11px 18px; border-radius: 999px; box-shadow: var(--shadow-sm);
+        white-space: nowrap;
+      }
+      .call-btn:hover { background: var(--amber-deep); color: #fff8e8; }
+      @media (max-width: 640px) {
+        .status-pill { display: none; }
+        .brand-name { font-size: 18px; }
+        .call-btn { padding: 10px 14px; font-size: 14.5px; }
+      }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        position: relative; overflow: hidden;
+        background:
+          radial-gradient(900px 480px at 85% -10%, var(--leaf-soft) 0%, transparent 60%),
+          linear-gradient(180deg, var(--bg-soft), var(--bg));
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .hero-in {
+        display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px;
+        align-items: center; padding: 54px 0 40px;
+      }
+      .hero-eyebrow {
+        display: inline-flex; align-items: center; gap: 8px;
+        font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+        color: var(--moss);
+      }
+      .hero h1 {
+        font-size: clamp(38px, 5.4vw, 58px); line-height: 1.04; font-weight: 800;
+        margin: 14px 0 16px; letter-spacing: -.01em;
+      }
+      .hero h1 em { font-style: italic; color: var(--pine); }
+      .hero p.lede { font-size: 19px; color: var(--ink-soft); margin: 0 0 24px; max-width: 34em; }
+      .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 9px;
+        font-weight: 800; font-size: 16.5px; text-decoration: none; border: 0; cursor: pointer;
+        padding: 15px 24px; border-radius: 999px; transition: transform .12s ease, background .12s ease;
+      }
+      .btn:active { transform: translateY(1px); }
+      .btn-pine { background: var(--pine); color: var(--on-pine); box-shadow: var(--shadow-sm); }
+      .btn-pine:hover { background: var(--pine-deep); }
+      .btn-ghost { background: var(--surface); color: var(--ink); border: 1.5px solid var(--line); }
+      .btn-ghost:hover { border-color: var(--moss); }
+      .rating-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .stars { color: var(--amber-deep); letter-spacing: 2px; font-size: 19px; line-height: 1; }
+      @media (prefers-color-scheme: dark) { .stars { color: var(--amber); } }
+      .rating-row strong { font-size: 17px; }
+      .rating-row span { color: var(--muted); font-size: 15px; }
+      .hero-art { position: relative; }
+      .hero-art svg { width: 100%; height: auto; }
+      .hero-badge {
+        position: absolute; left: 6px; bottom: 14px;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+        padding: 10px 14px; box-shadow: var(--shadow); max-width: 240px;
+      }
+      .hero-badge b { display: block; font-family: "Bitter", serif; font-size: 15.5px; }
+      .hero-badge span { font-size: 13.5px; color: var(--muted); }
+      @media (max-width: 860px) {
+        .hero-in { grid-template-columns: 1fr; padding: 38px 0 30px; }
+        .hero-art { max-width: 460px; margin: 0 auto; width: 100%; }
+      }
+
+      /* ---------- Trust band ---------- */
+      .trust {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+        background: var(--pine-deep); color: var(--on-pine);
+      }
+      .trust .cell { padding: 20px 22px; border-left: 1px solid rgba(242,236,217,.14); }
+      .trust .cell:first-child { border-left: 0; }
+      .trust b { display: block; font-family: "Bitter", serif; font-size: 19px; margin-bottom: 2px; }
+      .trust span { font-size: 14px; color: var(--on-pine-soft); }
+      @media (max-width: 860px) { .trust { grid-template-columns: 1fr 1fr; } .trust .cell:nth-child(3) { border-left: 0; } .trust .cell { border-top: 1px solid rgba(242,236,217,.14); } .trust .cell:nth-child(-n+2) { border-top: 0; } }
+
+      /* ---------- Sections ---------- */
+      section.block { padding: 64px 0; }
+      .sec-head { max-width: 640px; margin-bottom: 34px; }
+      .sec-head h2 { font-size: clamp(28px, 3.6vw, 38px); line-height: 1.12; margin: 0 0 10px; font-weight: 800; }
+      .sec-head p { color: var(--ink-soft); margin: 0; font-size: 17.5px; }
+      .sec-tag {
+        display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .13em;
+        text-transform: uppercase; color: var(--moss); margin-bottom: 10px;
+      }
+
+      /* ---------- Quiz ---------- */
+      .quiz-shell {
+        background: var(--pine-deep); color: var(--on-pine);
+        border-radius: 26px; padding: clamp(22px, 4vw, 44px);
+        box-shadow: var(--shadow); position: relative; overflow: hidden;
+      }
+      .quiz-shell::before {
+        content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+        background: radial-gradient(560px 300px at 100% 0%, rgba(123,160,91,.35), transparent 65%);
+      }
+      .quiz-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(22px, 4vw, 48px); position: relative; }
+      @media (max-width: 860px) { .quiz-grid { grid-template-columns: 1fr; } }
+      .quiz-intro h2 { font-size: clamp(27px, 3.4vw, 36px); margin: 0 0 12px; line-height: 1.12; }
+      .quiz-intro p { color: var(--on-pine-soft); margin: 0 0 18px; font-size: 17px; }
+      .quiz-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+      .quiz-points li { display: flex; gap: 10px; align-items: flex-start; font-size: 15.5px; }
+      .quiz-points .tick {
+        flex: none; width: 22px; height: 22px; border-radius: 50%;
+        background: rgba(223,161,47,.22); color: var(--amber);
+        display: grid; place-items: center; font-size: 13px; font-weight: 800; margin-top: 1px;
+      }
+      .quiz-card {
+        background: var(--surface); color: var(--ink); border-radius: 20px;
+        padding: clamp(20px, 3vw, 30px); box-shadow: var(--shadow);
+      }
+      .quiz-progress { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+      .quiz-progress .bar { flex: 1; height: 7px; border-radius: 99px; background: var(--line-soft); overflow: hidden; }
+      .quiz-progress .bar i { display: block; height: 100%; background: var(--leaf); border-radius: 99px; transition: width .35s ease; }
+      .quiz-progress span { font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+      .quiz-q { font-family: "Bitter", serif; font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0 0 6px; }
+      .quiz-hint { color: var(--muted); font-size: 14.5px; margin: 0 0 18px; }
+      .quiz-opts { display: grid; gap: 10px; }
+      .quiz-opt {
+        display: flex; gap: 12px; align-items: flex-start; text-align: left; width: 100%;
+        background: var(--surface-2); border: 1.5px solid var(--line); border-radius: 14px;
+        padding: 14px 16px; cursor: pointer; font: inherit; color: var(--ink);
+        transition: border-color .12s ease, background .12s ease;
+      }
+      .quiz-opt:hover { border-color: var(--moss); }
+      .quiz-opt.sel { border-color: var(--pine); background: var(--leaf-soft); }
+      .quiz-opt .opt-ico { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); display: grid; place-items: center; color: var(--pine); }
+      .quiz-opt b { display: block; font-size: 16px; }
+      .quiz-opt small { color: var(--muted); font-size: 14px; line-height: 1.4; display: block; }
+      .quiz-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; }
+      .quiz-back { background: none; border: 0; font: inherit; font-weight: 700; color: var(--muted); cursor: pointer; padding: 10px 6px; }
+      .quiz-back:hover { color: var(--ink); }
+      .quiz-next {
+        background: var(--pine); color: var(--on-pine); border: 0; cursor: pointer;
+        font: inherit; font-weight: 800; padding: 13px 24px; border-radius: 999px;
+      }
+      .quiz-next:disabled { opacity: .45; cursor: not-allowed; }
+      .quiz-next:not(:disabled):hover { background: var(--pine-deep); }
+      /* result */
+      .verdict-tag {
+        display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+        background: var(--leaf-soft); color: var(--pine); padding: 6px 12px; border-radius: 999px; margin-bottom: 12px;
+      }
+      @media (prefers-color-scheme: dark) { .verdict-tag { color: var(--leaf); } }
+      .verdict-tag.urgent { background: #f7ded4; color: var(--rust-deep); }
+      @media (prefers-color-scheme: dark) { .verdict-tag.urgent { background: #47231a; color: #f0a58d; } }
+      .quiz-result h3 { font-size: 26px; margin: 0 0 10px; line-height: 1.2; }
+      .quiz-result p { color: var(--ink-soft); margin: 0 0 14px; }
+      .quiz-recap { background: var(--surface-2); border: 1px dashed var(--line); border-radius: 12px; padding: 12px 16px; font-size: 14.5px; color: var(--ink-soft); margin-bottom: 18px; }
+      .quiz-recap b { color: var(--ink); }
+      .urgent-note {
+        display: flex; gap: 10px; align-items: flex-start;
+        background: #f9e8e1; border: 1px solid #ecc4b4; color: #6e2413;
+        border-radius: 12px; padding: 13px 15px; font-size: 15px; margin-bottom: 18px;
+      }
+      @media (prefers-color-scheme: dark) { .urgent-note { background: #3a1e14; border-color: #6b3520; color: #f3c3ae; } }
+      .urgent-note a { color: inherit; font-weight: 800; white-space: nowrap; }
+
+      /* ---------- Forms ---------- */
+      .est-form { display: grid; gap: 12px; }
+      .est-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      @media (max-width: 520px) { .est-form .row2 { grid-template-columns: 1fr; } }
+      .field label { display: block; font-size: 13.5px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+      .field input, .field select, .field textarea {
+        width: 100%; font: inherit; font-size: 16px; color: var(--ink);
+        background: var(--surface); border: 1.5px solid var(--line); border-radius: 12px;
+        padding: 12px 14px; appearance: none;
+      }
+      .field textarea { min-height: 84px; resize: vertical; }
+      .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--leaf); outline-offset: 1px; border-color: var(--moss); }
+      .form-note { font-size: 13.5px; color: var(--muted); margin: 2px 0 0; }
+      .form-done {
+        background: var(--leaf-soft); border: 1px solid var(--moss); border-radius: 14px;
+        padding: 18px; margin-top: 4px;
+      }
+      .form-done h4 { font-family: "Bitter", serif; margin: 0 0 6px; font-size: 19px; }
+      .form-done p { margin: 0 0 14px; font-size: 15px; color: var(--ink-soft); }
+      .form-done pre {
+        white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, Menlo, monospace;
+        font-size: 13.5px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+        padding: 12px 14px; margin: 0 0 14px; color: var(--ink);
+      }
+      .done-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+      .btn-sm { padding: 11px 18px; font-size: 15px; }
+      .copy-ok { font-size: 14px; font-weight: 700; color: var(--pine); align-self: center; }
+
+      /* ---------- Services ---------- */
+      .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      @media (max-width: 760px) { .services-grid { grid-template-columns: 1fr; } }
+      .svc {
+        background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--radius);
+        padding: 26px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 10px;
+      }
+      .svc .svc-ico {
+        width: 52px; height: 52px; border-radius: 15px; background: var(--leaf-soft);
+        display: grid; place-items: center; color: var(--pine);
+      }
+      @media (prefers-color-scheme: dark) { .svc .svc-ico { color: var(--leaf); } }
+      .svc h3 { font-size: 21px; margin: 0; }
+      .svc p { margin: 0; color: var(--ink-soft); font-size: 16px; }
+      .svc ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+      .svc ul li { display: flex; gap: 9px; font-size: 15px; color: var(--ink-soft); }
+      .svc ul li::before { content: "—"; color: var(--leaf); font-weight: 800; }
+      .svc a.svc-link { margin-top: auto; padding-top: 8px; font-weight: 800; text-decoration: none; font-size: 15.5px; }
+      .svc a.svc-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+      /* ---------- Steps ---------- */
+      .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: step; }
+      @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+      .step { border-top: 3px solid var(--leaf); padding-top: 16px; }
+      .step .n { font-family: "Bitter", serif; font-size: 15px; font-weight: 800; color: var(--moss); letter-spacing: .1em; text-transform: uppercase; }
+      .step h3 { font-size: 20px; margin: 6px 0 8px; }
+      .step p { margin: 0; color: var(--ink-soft); font-size: 16px; }
+
+      /* ---------- Reviews ---------- */
+      .reviews-band { background: var(--bg-soft); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+      .reviews-grid { display: grid; grid-template-columns: .85fr 2fr; gap: 30px; align-items: start; }
+      @media (max-width: 860px) { .reviews-grid { grid-template-columns: 1fr; } }
+      .score-card {
+        background: var(--pine); color: var(--on-pine); border-radius: var(--radius);
+        padding: 26px; box-shadow: var(--shadow-sm);
+      }
+      .score-card .big { font-family: "Bitter", serif; font-size: 56px; font-weight: 800; line-height: 1; }
+      .score-card .stars { color: var(--amber); font-size: 22px; margin: 8px 0; }
+      .score-card p { margin: 0; color: var(--on-pine-soft); font-size: 15px; }
+      .score-card a { color: var(--amber); font-weight: 700; }
+      .quote-grid { display: grid; gap: 16px; }
+      blockquote.quote {
+        margin: 0; background: var(--surface); border: 1px solid var(--line-soft);
+        border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow-sm);
+      }
+      blockquote.quote p { margin: 0 0 12px; font-size: 16.5px; color: var(--ink); font-family: "Bitter", serif; font-style: italic; line-height: 1.55; }
+      blockquote.quote footer { font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+      blockquote.quote .qstars { color: var(--amber-deep); letter-spacing: 2px; font-style: normal; }
+      @media (prefers-color-scheme: dark) { blockquote.quote .qstars { color: var(--amber); } }
+
+      /* ---------- Area / hours ---------- */
+      .area-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 30px; align-items: start; }
+      @media (max-width: 860px) { .area-grid { grid-template-columns: 1fr; } }
+      .hood-chips { display: flex; flex-wrap: wrap; gap: 9px; }
+      .hood-chips span {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+        padding: 8px 15px; font-size: 15px; font-weight: 700; color: var(--ink-soft);
+      }
+      .hood-chips span.home { background: var(--pine); color: var(--on-pine); border-color: var(--pine); }
+      .hours-card { background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-sm); }
+      .hours-card h3 { margin: 0 0 4px; font-size: 20px; }
+      .hours-now { display: flex; align-items: center; gap: 9px; font-weight: 800; margin-bottom: 14px; }
+      .hours-now .status-dot { box-shadow: 0 0 0 4px rgba(88,160,92,.18); }
+      .hours-table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+      .hours-table td { padding: 7px 0; border-top: 1px solid var(--line-soft); color: var(--ink-soft); }
+      .hours-table td:last-child { text-align: right; font-weight: 700; color: var(--ink); }
+      .hours-table tr.today td { color: var(--pine); font-weight: 800; }
+      @media (prefers-color-scheme: dark) { .hours-table tr.today td { color: var(--leaf); } }
+      .visit-line { margin-top: 16px; font-size: 15px; color: var(--ink-soft); }
+      .visit-line b { color: var(--ink); }
+
+      /* ---------- Footer ---------- */
+      footer.site { background: var(--pine-ink); color: var(--on-pine-soft); padding: 44px 0 30px; margin-top: 0; }
+      footer.site .foot-grid { display: flex; flex-wrap: wrap; gap: 26px; justify-content: space-between; margin-bottom: 28px; }
+      footer.site .foot-brand { font-family: "Bitter", serif; font-size: 21px; font-weight: 800; color: var(--on-pine); }
+      footer.site p { margin: 6px 0 0; font-size: 14.5px; max-width: 40em; }
+      footer.site a { color: var(--amber); font-weight: 700; text-decoration: none; }
+      footer.site a:hover { text-decoration: underline; }
+      .foot-legal { border-top: 1px solid rgba(242,236,217,.16); padding-top: 18px; font-size: 13.5px; display: grid; gap: 5px; }
+      .foot-legal .demo-line { color: var(--on-pine); font-weight: 700; }
+
+      /* sticky mobile call bar */
+      .mobile-call {
+        display: none; position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 50;
+        background: var(--amber); color: var(--amber-ink); text-align: center; font-weight: 800; font-size: 16.5px;
+        padding: 15px; border-radius: 999px; text-decoration: none; box-shadow: var(--shadow);
+      }
+      @media (max-width: 640px) { .mobile-call { display: block; } body { padding-bottom: 74px; } }
+    </style>
+  </head>
+  <body>
+    <div class="storm-strip">
+      <span class="bolt" aria-hidden="true">⚠</span>Storm damage or a tree down? Evergreen answers around the clock — <a href="tel:+15169967992">call (516) 996-7992 now</a>
+    </div>
+
+    <header class="site">
+      <div class="wrap header-in">
+        <a class="brand" href="#top" aria-label="Evergreen Tree and Shrub — home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 6.5 10h3.2L5 16.5h6V21h2v-4.5h6L14.3 10h3.2L12 2Z" fill="#f2ecd9"/><rect x="11" y="20" width="2" height="2.4" fill="#dfa12f"/></svg>
+          </span>
+          <span>
+            <span class="brand-name">Evergreen</span><br />
+            <span class="brand-sub">Tree &amp; Shrub · Hollis, Queens</span>
+          </span>
+        </a>
+        <span class="header-spacer"></span>
+        <span class="status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">Checking hours…</span></span>
+        <a class="call-btn" href="tel:+15169967992">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+          (516) 996-7992
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="wrap hero-in">
+          <div>
+            <span class="hero-eyebrow">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22c5-3.6 8-7.6 8-12.5C20 5 16.4 2 12 2S4 5 4 9.5C4 14.4 7 18.4 12 22Zm0-9.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" opacity=".0"/><path d="M20 4C10 4 4 10 4 20c10 0 16-6 16-16ZM7.2 16.8c.6-4.7 3.6-8.4 8-10-3.4 2.7-6 6.2-8 10Z"/></svg>
+              Tree care · Hollis, Queens NY
+            </span>
+            <h1>Your trees, looked after <em>like they&rsquo;re ours.</em></h1>
+            <p class="lede">Pruning, safe removal, stump grinding and shrub care for Queens homes — from a crew your neighbors describe as &ldquo;top-notch&rdquo; and leave-the-yard-cleaner tidy. Not sure what your tree needs? Start with the 60-second health check.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-pine" href="#health-check">Take the Tree Health Check
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#estimate">Request a free estimate</a>
+            </div>
+            <div class="rating-row">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <strong>4.9 out of 5</strong>
+              <span>from Queens homeowners&rsquo; reviews</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 520 430" role="img" aria-label="Illustration of a leafy tree">
+              <circle cx="392" cy="74" r="42" fill="#dfa12f" opacity=".85"/>
+              <ellipse cx="260" cy="392" rx="238" ry="26" fill="#7ba05b" opacity=".35"/>
+              <path d="M252 396c0-52 4-96 2-148l14 0c-2 52 2 96 2 148Z" fill="#6b4a2f"/>
+              <path d="M256 300c-26-6-48-22-62-44M264 262c24-4 44-18 56-38M258 330c-18-2-34-12-44-26M262 210c-8-22-6-44 4-62" stroke="#6b4a2f" stroke-width="10" stroke-linecap="round" fill="none"/>
+              <g>
+                <circle cx="150" cy="150" r="62" fill="#4c7a4f"/>
+                <circle cx="228" cy="104" r="76" fill="#3c6a41"/>
+                <circle cx="316" cy="118" r="70" fill="#4c7a4f"/>
+                <circle cx="368" cy="176" r="54" fill="#5d8a55"/>
+                <circle cx="120" cy="216" r="46" fill="#5d8a55"/>
+                <circle cx="206" cy="182" r="64" fill="#67975c"/>
+                <circle cx="296" cy="196" r="58" fill="#67975c"/>
+                <circle cx="248" cy="140" r="52" fill="#7ba05b"/>
+                <circle cx="168" cy="128" r="26" fill="#87b06b"/>
+                <circle cx="330" cy="96" r="24" fill="#87b06b"/>
+                <circle cx="238" cy="216" r="26" fill="#87b06b"/>
+              </g>
+              <g fill="#4c7a4f">
+                <path d="M96 268c8 2 12 8 12 16-8-2-12-8-12-16Z"/>
+                <path d="M420 238c8 2 12 8 12 16-8-2-12-8-12-16Z"/>
+                <path d="M382 292c8 2 12 8 12 16-8-2-12-8-12-16Z"/>
+              </g>
+              <g fill="#dfa12f" opacity=".8">
+                <path d="M132 300c7 2 10 7 10 13-7-2-10-7-10-13Z"/>
+                <path d="M336 268c7 2 10 7 10 13-7-2-10-7-10-13Z"/>
+              </g>
+              <path d="M60 396c14-10 30-10 44 0M392 398c16-11 34-11 50 0M196 402c12-8 26-8 38 0" stroke="#4c7a4f" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>
+            </svg>
+            <div class="hero-badge">
+              <b>Open 24 hours</b>
+              <span>Storm calls answered day &amp; night, every day.</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrap" style="padding-bottom:26px;">
+          <div class="trust" style="border-radius:18px; overflow:hidden;">
+            <div class="cell"><b>4.9 ★ rated</b><span>by local homeowners</span></div>
+            <div class="cell"><b>Open 24 / 7</b><span>emergency storm response</span></div>
+            <div class="cell"><b>Free estimates</b><span>on-site, no obligation</span></div>
+            <div class="cell"><b>Hollis based</b><span>serving all of Queens</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TREE HEALTH CHECK ============ -->
+      <section class="block" id="health-check">
+        <div class="wrap">
+          <div class="quiz-shell">
+            <div class="quiz-grid">
+              <div class="quiz-intro">
+                <span class="sec-tag" style="color:var(--amber);">The Tree Health Check</span>
+                <h2>Prune it, remove it,<br />or grind the stump?</h2>
+                <p>Three quick questions about what you&rsquo;re seeing in your yard. You&rsquo;ll get a straight recommendation — the same call our crew would make standing under the tree — and a free-estimate request with your answers already filled in.</p>
+                <ul class="quiz-points">
+                  <li><span class="tick">✓</span><span>Takes about 60 seconds — no email required to see your result</span></li>
+                  <li><span class="tick">✓</span><span>Flags storm hazards that shouldn&rsquo;t wait</span></li>
+                  <li><span class="tick">✓</span><span>Your answers carry straight into the estimate request</span></li>
+                </ul>
+              </div>
+              <div class="quiz-card" id="quizCard" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="block" id="services" style="padding-top:6px;">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-tag">What we do</span>
+            <h2>Full care for the trees &amp; shrubs on your lot</h2>
+            <p>Every job starts with a free on-site estimate. Tell us what you&rsquo;re seeing and we&rsquo;ll recommend the lightest fix that keeps your property safe — never more work than the tree actually needs.</p>
+          </div>
+          <div class="services-grid">
+            <article class="svc">
+              <span class="svc-ico">
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.3 20 19M8.2 16.7 20 5M13.5 12h.01"/></svg>
+              </span>
+              <h3>Tree Pruning &amp; Trimming</h3>
+              <p>Deadwood removal, crown thinning and careful shaping that keeps trees healthy, lets light back into the yard, and cuts down on storm breakage.</p>
+              <ul>
+                <li>Dead, dying &amp; hazardous branches</li>
+                <li>Clearance from roofs, wires &amp; sidewalks</li>
+                <li>Health pruning for oaks, maples &amp; more</li>
+              </ul>
+              <a class="svc-link" href="#health-check">Check if pruning is right for your tree →</a>
+            </article>
+            <article class="svc">
+              <span class="svc-ico">
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10M12 8c-3 0-5-2-5.4-4.6C9.2 3.6 11 5 12 8Zm0 0c3 0 5-2 5.4-4.6C14.8 3.6 13 5 12 8Z"/><path d="M5 21h14M7 17.5h10M9.5 13h5"/></svg>
+              </span>
+              <h3>Tree Removal</h3>
+              <p>When a tree is dead, rotting, leaning, or crowding the house, we take it down in controlled sections — then haul everything away and leave the yard clean.</p>
+              <ul>
+                <li>Dead, dying &amp; storm-damaged trees</li>
+                <li>Tight Queens lots &amp; backyard access</li>
+                <li>Full debris haul-away &amp; cleanup</li>
+              </ul>
+              <a class="svc-link" href="#health-check">Check if removal is the safer call →</a>
+            </article>
+            <article class="svc">
+              <span class="svc-ico">
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M18.5 5.5l-2.1 2.1M7.6 16.4l-2.1 2.1"/></svg>
+              </span>
+              <h3>Stump Grinding</h3>
+              <p>Old stump in the middle of the lawn? We grind it below ground level so you can replant, re-sod, or just stop tripping over it.</p>
+              <ul>
+                <li>Ground below grade — ready to replant</li>
+                <li>Stops regrowth shoots &amp; trip hazards</li>
+                <li>Add it to any removal, or on its own</li>
+              </ul>
+              <a class="svc-link" href="#health-check">Got a stump? Start the check →</a>
+            </article>
+            <article class="svc">
+              <span class="svc-ico">
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-5 3.5-8 8-8 1.2 0 2.3.2 3.3.6C15 9 17 5.5 21 4c.3 4.5-1.2 8.6-4.4 10.8C15 17.4 12.9 20 9 20H4Z"/><path d="M4 20c2-3.4 5-6 9-7.5"/></svg>
+              </span>
+              <h3>Shrub &amp; Hedge Care</h3>
+              <p>Overgrown hedges and tired shrubs shape up fast. Shaping, thinning, and removal of shrubs that have outgrown their spot against the house.</p>
+              <ul>
+                <li>Hedge shaping &amp; height reduction</li>
+                <li>Shrub pruning for health &amp; blooms</li>
+                <li>Overgrown shrub removal</li>
+              </ul>
+              <a class="svc-link" href="#estimate">Request a free estimate →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="block" style="padding-top:0;">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-tag">How it works</span>
+            <h2>From &ldquo;something looks off&rdquo; to a clean yard</h2>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <span class="n">Step 1</span>
+              <h3>Take the health check</h3>
+              <p>Answer three questions about your tree. You get a prune / remove / grind recommendation on the spot — and storm hazards get flagged right away.</p>
+            </div>
+            <div class="step">
+              <span class="n">Step 2</span>
+              <h3>Get a free on-site estimate</h3>
+              <p>We come out, look at the tree in person, and walk you through what it needs — like we did for the homeowner who couldn&rsquo;t decide between trimming and removing six oaks.</p>
+            </div>
+            <div class="step">
+              <span class="n">Step 3</span>
+              <h3>We do the work, yard left clean</h3>
+              <p>Our crew handles the cutting, the haul-away, and the cleanup. Reviewers keep saying the same thing: the garden ends up cleaner than when we arrived.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ REVIEWS ============ -->
+      <section class="block reviews-band" id="reviews">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-tag">Neighbor proof</span>
+            <h2>Rated 4.9 stars by the people who hired us</h2>
+          </div>
+          <div class="reviews-grid">
+            <div class="score-card">
+              <div class="big">4.9</div>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <p>Average rating across customer reviews. The quotes beside this are real reviews, published word-for-word — read them in full at the source.</p>
+              <p style="margin-top:12px;"><a href="https://www.chamberofcommerce.com/business-directory/new-york/jamaica/tree-service/37769761-evergreen-tree-shrub" target="_blank" rel="noopener">Read our reviews on Chamber of Commerce →</a></p>
+            </div>
+            <div class="quote-grid">
+              <blockquote class="quote">
+                <p>&ldquo;They arrived on time and were kind. I am very appreciative of their expertise and direction in helping me decide which trees could be rescued and which ones posed a risk to the safety of my property. I highly recommend them.&rdquo;</p>
+                <footer><span>Homeowner review — estimate visit for six water oaks</span><span class="qstars" aria-hidden="true">★★★★★</span></footer>
+              </blockquote>
+              <blockquote class="quote">
+                <p>&ldquo;These men are top-notch. Timely, polite, and responsive. They have been taking care of our trees for a long time… The workers were excellent, and they left the garden cleaner than when they arrived.&rdquo;</p>
+                <footer><span>Long-time customer review</span><span class="qstars" aria-hidden="true">★★★★★</span></footer>
+              </blockquote>
+              <blockquote class="quote">
+                <p>&ldquo;Their team was knowledgeable and skilled in tree cutting. They carefully removed a hazardous tree from my front yard, and the cleanup was thorough. I appreciate their attention to detail and would trust them with any future tree-related needs.&rdquo;</p>
+                <footer><span>Homeowner review — hazardous tree removal</span><span class="qstars" aria-hidden="true">★★★★★</span></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ AREA + HOURS ============ -->
+      <section class="block" id="area">
+        <div class="wrap">
+          <div class="area-grid">
+            <div>
+              <div class="sec-head" style="margin-bottom:20px;">
+                <span class="sec-tag">Service area</span>
+                <h2>Based in Hollis. Working all over Queens.</h2>
+                <p>Evergreen Tree &amp; Shrub is based at 204-25 Hillside Ave in Hollis and serves homeowners across Queens — including:</p>
+              </div>
+              <div class="hood-chips">
+                <span class="home">Hollis — home base</span>
+                <span>Jamaica</span>
+                <span>Queens Village</span>
+                <span>St. Albans</span>
+                <span>Cambria Heights</span>
+                <span>Springfield Gardens</span>
+                <span>Bellerose</span>
+                <span>Fresh Meadows</span>
+                <span>Bayside</span>
+                <span>Flushing</span>
+                <span>Forest Hills</span>
+                <span>Rego Park</span>
+                <span>Astoria</span>
+                <span>Jackson Heights</span>
+                <span>Richmond Hill</span>
+                <span>Ozone Park</span>
+                <span>Far Rockaway</span>
+              </div>
+              <p style="color:var(--ink-soft); margin-top:18px;">Don&rsquo;t see your neighborhood? If it&rsquo;s in Queens, chances are we&rsquo;re already working on your block — call <a href="tel:+15169967992"><b>(516) 996-7992</b></a> and ask.</p>
+            </div>
+            <aside class="hours-card" aria-label="Hours and contact">
+              <h3>Hours</h3>
+              <div class="hours-now"><span class="status-dot" id="hoursDot"></span><span id="hoursNowText">Checking…</span></div>
+              <table class="hours-table" id="hoursTable">
+                <tr data-day="1"><td>Monday</td><td>Open 24 hours</td></tr>
+                <tr data-day="2"><td>Tuesday</td><td>Open 24 hours</td></tr>
+                <tr data-day="3"><td>Wednesday</td><td>Open 24 hours</td></tr>
+                <tr data-day="4"><td>Thursday</td><td>Open 24 hours</td></tr>
+                <tr data-day="5"><td>Friday</td><td>Open 24 hours</td></tr>
+                <tr data-day="6"><td>Saturday</td><td>Open 24 hours</td></tr>
+                <tr data-day="0"><td>Sunday</td><td>Open 24 hours</td></tr>
+              </table>
+              <p class="visit-line"><b>Visit / mail:</b> 204-25 Hillside Ave, Hollis, NY 11423<br />
+              <b>Call or text:</b> <a href="tel:+15169967992">(516) 996-7992</a></p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ESTIMATE ============ -->
+      <section class="block" id="estimate" style="padding-top:0;">
+        <div class="wrap">
+          <div class="quiz-shell" style="background:var(--surface); color:var(--ink); border:1px solid var(--line-soft);">
+            <div class="quiz-grid">
+              <div class="quiz-intro">
+                <span class="sec-tag">Free estimate</span>
+                <h2 style="color:var(--ink);">Request your free on-site estimate</h2>
+                <p style="color:var(--ink-soft);">Tell us where the tree is and what it&rsquo;s doing. We&rsquo;ll put together your request — then one tap calls it in, and a crew member confirms a time to come look in person. Estimates are always free, with no obligation.</p>
+                <ul class="quiz-points">
+                  <li><span class="tick" style="background:var(--leaf-soft); color:var(--pine);">✓</span><span>Storm damage? Skip the form — call <a href="tel:+15169967992" style="color:inherit;"><b>(516) 996-7992</b></a>, we answer 24/7</span></li>
+                  <li><span class="tick" style="background:var(--leaf-soft); color:var(--pine);">✓</span><span>Did the health check first? Your recommendation attaches automatically</span></li>
+                </ul>
+                <p id="attachedNote" style="display:none; margin-top:14px; background:var(--leaf-soft); border-radius:12px; padding:12px 15px; font-size:15px; color:var(--ink);"></p>
+              </div>
+              <div>
+                <form class="est-form" id="estForm" novalidate>
+                  <div class="row2">
+                    <div class="field">
+                      <label for="fName">Your name</label>
+                      <input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Maria Lopez" required />
+                    </div>
+                    <div class="field">
+                      <label for="fPhone">Best phone</label>
+                      <input id="fPhone" name="phone" type="tel" autocomplete="tel" placeholder="(718) 555-0123" required />
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="field">
+                      <label for="fHood">Neighborhood</label>
+                      <input id="fHood" name="hood" type="text" placeholder="e.g. Hollis, St. Albans, Bayside" required />
+                    </div>
+                    <div class="field">
+                      <label for="fService">Service needed</label>
+                      <select id="fService" name="service">
+                        <option value="Not sure yet">Not sure yet — help me decide</option>
+                        <option value="Tree pruning & trimming">Tree pruning &amp; trimming</option>
+                        <option value="Tree removal">Tree removal</option>
+                        <option value="Stump grinding">Stump grinding</option>
+                        <option value="Shrub & hedge care">Shrub &amp; hedge care</option>
+                        <option value="Emergency / storm damage">Emergency / storm damage</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="fNotes">What&rsquo;s going on with the tree?</label>
+                    <textarea id="fNotes" name="notes" placeholder="e.g. Big oak leaning toward the driveway since the last storm; dead branches over the roof."></textarea>
+                  </div>
+                  <button class="btn btn-pine" type="submit" style="justify-content:center;">Prepare my free estimate request</button>
+                  <p class="form-note">Your request stays on this device until you call it in — nothing is sent anywhere automatically.</p>
+                </form>
+                <div class="form-done" id="estDone" style="display:none;">
+                  <h4>Your estimate request is ready ✓</h4>
+                  <p>Here&rsquo;s exactly what to tell us. Tap <b>Call to request</b> and read it out — or copy it and keep it for the visit.</p>
+                  <pre id="estSummary"></pre>
+                  <div class="done-actions">
+                    <a class="btn btn-pine btn-sm" href="tel:+15169967992">Call (516) 996-7992 to request</a>
+                    <button class="btn btn-ghost btn-sm" type="button" id="copyBtn">Copy my request</button>
+                    <span class="copy-ok" id="copyOk" style="display:none;">Copied ✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <div class="foot-brand">Evergreen Tree &amp; Shrub</div>
+            <p>Tree pruning, removal, stump grinding &amp; shrub care.<br />204-25 Hillside Ave, Hollis, NY 11423 · <a href="tel:+15169967992">(516) 996-7992</a> · Open 24 hours</p>
+          </div>
+          <div>
+            <p><b style="color:var(--on-pine);">Quick links</b><br />
+            <a href="#health-check">Tree Health Check</a> · <a href="#services">Services</a> · <a href="#reviews">Reviews</a> · <a href="#estimate">Free estimate</a></p>
+          </div>
+        </div>
+        <div class="foot-legal">
+          <span class="demo-line">Demo concept — not the official site of Evergreen Tree &amp; Shrub.</span>
+          <span>Demo built by PYMTW Web Design.</span>
+          <span>Business details (address, phone, hours, rating and review excerpts) reflect public listings as of October 2026; review quotes are published verbatim from the business&rsquo;s Chamber of Commerce listing.</span>
+          <span>© 2026 PYMTW Web Design — demo created for evaluation purposes only; not to be copied or reused without written permission.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="mobile-call" href="tel:+15169967992">📞 Call (516) 996-7992 — Open 24/7</a>
+
+    <script>
+      /* ================= Open / closed status =================
+         Verified hours (Chamber of Commerce + BestProsInTown listings):
+         open 24 hours, every day. Status is computed live from this
+         schedule against the visitor's clock in America/New_York. */
+      var SCHEDULE = { 0: [0, 24], 1: [0, 24], 2: [0, 24], 3: [0, 24], 4: [0, 24], 5: [0, 24], 6: [0, 24] };
+      function nyNow() {
+        return new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+      }
+      function openStatus() {
+        var n = nyNow(), day = n.getDay(), h = n.getHours() + n.getMinutes() / 60;
+        var range = SCHEDULE[day];
+        var open = range && h >= range[0] && h < range[1];
+        return { open: open, now: n };
+      }
+      function renderStatus() {
+        var s = openStatus();
+        var pill = document.getElementById("statusPill");
+        var txt = document.getElementById("statusText");
+        var hoursTxt = document.getElementById("hoursNowText");
+        var timeStr = s.now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+        if (s.open) {
+          txt.textContent = "Open now · 24 hours";
+          pill.classList.remove("closed");
+          hoursTxt.textContent = "Open now — it's " + timeStr + " in Queens, and we answer around the clock.";
+        } else {
+          txt.textContent = "Closed — call for emergencies";
+          pill.classList.add("closed");
+          hoursTxt.textContent = "Currently closed — for storm emergencies, call any time.";
+        }
+        var rows = document.querySelectorAll("#hoursTable tr");
+        rows.forEach(function (r) {
+          r.classList.toggle("today", parseInt(r.getAttribute("data-day"), 10) === s.now.getDay());
+        });
+      }
+      renderStatus();
+      setInterval(renderStatus, 60000);
+
+      /* ================= Tree Health Check quiz ================= */
+      var QUESTIONS = [
+        {
+          q: "What's going on with your tree?",
+          hint: "Pick the one that fits best — you can only pick one tree per check.",
+          options: [
+            { t: "It's leaning, split, or storm-damaged", s: "Took a hit in the wind, or just doesn't look stable", icon: "storm", scores: { remove: 3 }, urgent: true },
+            { t: "Dead branches, bare spots, or no leaves", s: "In season, parts of it just aren't growing", icon: "dead", scores: { remove: 2, prune: 1 } },
+            { t: "It's healthy — just overgrown and shaggy", s: "Blocking light, brushing the roof, or out of shape", icon: "prune", scores: { prune: 3 } },
+            { t: "The tree's already gone — it's just a stump", s: "A leftover stump you want out of the yard", icon: "stump", scores: { stump: 5 } },
+            { t: "It's really my shrubs and hedges", s: "Overgrown, misshapen, or swallowing the house", icon: "shrub", scores: { shrub: 5 } }
+          ]
+        },
+        {
+          q: "Is anything underneath it at risk?",
+          hint: "Think about what a falling limb would land on.",
+          options: [
+            { t: "Yes — the house, driveway, or cars", s: "Damage or injury risk if something comes down", icon: "house", scores: { remove: 2 }, urgent: true },
+            { t: "Yes — sidewalk, street, or power lines", s: "Public way or utility lines are in the drop zone", icon: "line", scores: { remove: 2 }, urgent: true },
+            { t: "Not really — it's over open yard", s: "Nothing valuable in the way if a limb drops", icon: "yard", scores: { prune: 1 } }
+          ]
+        },
+        {
+          q: "How does the tree look overall?",
+          hint: "Stand back and take in the whole canopy and trunk.",
+          options: [
+            { t: "Mostly green and full", s: "Leaves look healthy for the season", icon: "full", scores: { prune: 2 } },
+            { t: "Thinning out, sparse, or patchy", s: "You can see through it more than you used to", icon: "thin", scores: { prune: 1, remove: 1 } },
+            { t: "Mushrooms, rot, or a hollow at the base", s: "Fungus, soft bark, or a cavity near the ground", icon: "rot", scores: { remove: 3 } },
+            { t: "Completely dead or bare", s: "No leaves at all, bark peeling off", icon: "dead", scores: { remove: 3 } }
+          ]
+        }
+      ];
+      var ICONS = {
+        storm: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z"/></svg>',
+        dead: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22V10M12 10C12 6 9 4 5 4c0 4 3 6 7 6Zm0-2c0-3 2-5 6-5 0 3.5-2 5.5-6 5Z" opacity=".45"/><path d="m4 4 16 16" stroke="#b03a24"/></svg>',
+        prune: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.3 20 19M8.2 16.7 20 5"/></svg>',
+        stump: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M6 20v-3.5C6 14 8.7 12.5 12 12.5S18 14 18 16.5V20"/><ellipse cx="12" cy="12.5" rx="6" ry="1.8"/></svg>',
+        shrub: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-5 3.5-8 8-8 1.2 0 2.3.2 3.3.6C15 9 17 5.5 21 4c.3 4.5-1.2 8.6-4.4 10.8C15 17.4 12.9 20 9 20H4Z"/></svg>',
+        house: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5.5 9.5V21h13V9.5"/></svg>',
+        line: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3v18M17 3v18M7 6h10M7 11c3.3 2 6.7 2 10 0"/></svg>',
+        yard: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 20h18M6 20c0-3 1-5 3-6.5M12 20v-6M18 20c0-3-1-5-3-6.5"/></svg>',
+        full: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="9" r="6.5"/><path d="M12 15.5V22"/></svg>',
+        thin: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3.5 3"><circle cx="12" cy="9" r="6.5"/><path d="M12 15.5V22" stroke-dasharray="0"/></svg>',
+        rot: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 14a8 5.5 0 0 1 16 0Z"/><path d="M12 14v7M8.5 21h7"/></svg>'
+      };
+      var VERDICTS = {
+        remove: {
+          tag: "Our recommendation",
+          title: "This tree should come down",
+          body: "What you described — structural damage, dieback, or rot near the base — is the profile of a tree that gets more dangerous (and more expensive) the longer it stands. We'd remove it in controlled sections, haul everything away, and can grind the stump in the same visit. The on-site estimate is free, and we'll tell you honestly if a lighter fix is safe instead.",
+          service: "Tree removal"
+        },
+        prune: {
+          tag: "Our recommendation",
+          title: "Good news — this tree can stay",
+          body: "Nothing you described points to a tree that has to go. A proper prune — deadwood out, canopy thinned, clearance off the roof and wires — will make it healthier, safer in storms, and better looking. That's a fraction of the work of a removal, and your shade survives.",
+          service: "Tree pruning & trimming"
+        },
+        stump: {
+          tag: "Our recommendation",
+          title: "Grind the stump and be done with it",
+          body: "No tree decision to make here — the tree's already out. We grind the stump below ground level so you can replant, re-sod, or simply stop mowing around it, and the regrowth shoots stop with it. Quick visit, free estimate first.",
+          service: "Stump grinding"
+        },
+        shrub: {
+          tag: "Our recommendation",
+          title: "Your shrubs need a shaping, not a saw",
+          body: "Overgrown hedges and shrubs respond well to a proper cut-back: shaped, thinned, and cleared off the siding. If a shrub has truly outgrown its spot, we can take it out cleanly instead. Either way, the estimate visit is free.",
+          service: "Shrub & hedge care"
+        }
+      };
+      var quizState = { step: 0, answers: [] };
+      var quizCard = document.getElementById("quizCard");
+
+      function renderQuiz() {
+        var step = quizState.step;
+        if (step >= QUESTIONS.length) { renderVerdict(); return; }
+        var q = QUESTIONS[step];
+        var pct = Math.round((step / QUESTIONS.length) * 100);
+        var html = '<div class="quiz-progress"><span>Question ' + (step + 1) + " of " + QUESTIONS.length + '</span><div class="bar"><i style="width:' + pct + '%"></i></div></div>';
+        html += '<p class="quiz-q">' + q.q + "</p><p class=\"quiz-hint\">" + q.hint + "</p>";
+        html += '<div class="quiz-opts">';
+        q.options.forEach(function (opt, i) {
+          var sel = quizState.answers[step] === i ? " sel" : "";
+          html += '<button type="button" class="quiz-opt' + sel + '" data-opt="' + i + '"><span class="opt-ico">' + (ICONS[opt.icon] || "") + "</span><span><b>" + opt.t + "</b><small>" + opt.s + "</small></span></button>";
+        });
+        html += "</div>";
+        html += '<div class="quiz-nav">';
+        html += step > 0 ? '<button type="button" class="quiz-back" id="qBack">← Back</button>' : "<span></span>";
+        var has = typeof quizState.answers[step] === "number";
+        html += '<button type="button" class="quiz-next" id="qNext"' + (has ? "" : " disabled") + ">" + (step === QUESTIONS.length - 1 ? "See my recommendation" : "Next question") + "</button>";
+        html += "</div>";
+        quizCard.innerHTML = html;
+        quizCard.querySelectorAll(".quiz-opt").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            quizState.answers[step] = parseInt(btn.getAttribute("data-opt"), 10);
+            renderQuiz();
+          });
+        });
+        var next = document.getElementById("qNext");
+        if (next) next.addEventListener("click", function () { quizState.step++; renderQuiz(); });
+        var back = document.getElementById("qBack");
+        if (back) back.addEventListener("click", function () { quizState.step--; renderQuiz(); });
+      }
+
+      function computeVerdict() {
+        var totals = { remove: 0, prune: 0, stump: 0, shrub: 0 };
+        var urgent = false;
+        quizState.answers.forEach(function (ai, qi) {
+          var opt = QUESTIONS[qi].options[ai];
+          Object.keys(opt.scores).forEach(function (k) { totals[k] += opt.scores[k]; });
+          if (opt.urgent) urgent = true;
+        });
+        if (totals.stump >= 5) return { key: "stump", urgent: false };
+        if (totals.shrub >= 5) return { key: "shrub", urgent: false };
+        if (totals.remove >= totals.prune && totals.remove >= 4) return { key: "remove", urgent: urgent };
+        if (totals.remove > totals.prune + 2) return { key: "remove", urgent: urgent };
+        return { key: "prune", urgent: urgent && totals.remove >= 3 };
+      }
+
+      function renderVerdict() {
+        var v = computeVerdict();
+        var data = VERDICTS[v.key];
+        var recap = quizState.answers.map(function (ai, qi) { return QUESTIONS[qi].options[ai].t; }).join(" · ");
+        var html = '<div class="quiz-progress"><span>Your result</span><div class="bar"><i style="width:100%"></i></div></div>';
+        html += '<div class="quiz-result">';
+        html += '<span class="verdict-tag' + (v.urgent ? " urgent" : "") + '">' + (v.urgent ? "⚠ Don't wait on this one" : data.tag) + "</span>";
+        html += "<h3>" + data.title + "</h3>";
+        html += "<p>" + data.body + "</p>";
+        if (v.urgent) {
+          html += '<div class="urgent-note"><span aria-hidden="true">⚠</span><span><b>This sounds like a hazard.</b> If a limb is hanging or the tree is leaning toward the house, keep people and cars clear — and <a href="tel:+15169967992">call (516) 996-7992</a> now. We answer 24/7.</span></div>';
+        }
+        html += '<div class="quiz-recap"><b>Your answers:</b> ' + recap + "</div>";
+        html += '<div style="display:flex; flex-wrap:wrap; gap:10px;">';
+        html += '<button type="button" class="btn btn-pine btn-sm" id="qToEstimate">Get my free estimate for this</button>';
+        html += '<button type="button" class="quiz-back" id="qRestart">Start over</button>';
+        html += "</div></div>";
+        quizCard.innerHTML = html;
+        window.__quizResult = { verdict: data.title, service: data.service, recap: recap, urgent: v.urgent };
+        document.getElementById("qRestart").addEventListener("click", function () {
+          quizState = { step: 0, answers: [] };
+          window.__quizResult = null;
+          renderQuiz();
+        });
+        document.getElementById("qToEstimate").addEventListener("click", function () {
+          var sel = document.getElementById("fService");
+          for (var i = 0; i < sel.options.length; i++) {
+            if (sel.options[i].value === data.service) { sel.selectedIndex = i; break; }
+          }
+          var notes = document.getElementById("fNotes");
+          if (!notes.value) notes.value = "Tree Health Check result: " + data.title + ". My answers: " + recap + ".";
+          var note = document.getElementById("attachedNote");
+          note.style.display = "block";
+          note.innerHTML = "<b>Health check attached:</b> " + data.title + " — " + recap;
+          document.getElementById("estimate").scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () { document.getElementById("fName").focus({ preventScroll: true }); }, 650);
+        });
+      }
+      renderQuiz();
+
+      /* ================= Estimate form ================= */
+      var estForm = document.getElementById("estForm");
+      estForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("fName").value.trim();
+        var phone = document.getElementById("fPhone").value.trim();
+        var hood = document.getElementById("fHood").value.trim();
+        if (!name || !phone || !hood) {
+          [["fName", name], ["fPhone", phone], ["fHood", hood]].forEach(function (pair) {
+            document.getElementById(pair[0]).style.borderColor = pair[1] ? "" : "#b03a24";
+          });
+          (name ? (phone ? document.getElementById("fHood") : document.getElementById("fPhone")) : document.getElementById("fName")).focus();
+          return;
+        }
+        var service = document.getElementById("fService").value;
+        var notes = document.getElementById("fNotes").value.trim();
+        var lines = [
+          "FREE ESTIMATE REQUEST — Evergreen Tree & Shrub",
+          "Name: " + name,
+          "Phone: " + phone,
+          "Neighborhood: " + hood,
+          "Service: " + service
+        ];
+        if (window.__quizResult) {
+          lines.push("Tree Health Check: " + window.__quizResult.verdict + (window.__quizResult.urgent ? " (flagged as a possible hazard)" : ""));
+          lines.push("Health check answers: " + window.__quizResult.recap);
+        }
+        if (notes) lines.push("Notes: " + notes);
+        var summary = lines.join("\n");
+        document.getElementById("estSummary").textContent = summary;
+        var done = document.getElementById("estDone");
+        done.style.display = "block";
+        done.scrollIntoView({ behavior: "smooth", block: "center" });
+        var copyBtn = document.getElementById("copyBtn");
+        copyBtn.onclick = function () {
+          var ok = document.getElementById("copyOk");
+          function show() { ok.style.display = "inline"; setTimeout(function () { ok.style.display = "none"; }, 2600); }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(summary).then(show, show);
+          } else { show(); }
+        };
+      });
+    </script>
+  </body>
+</html>
