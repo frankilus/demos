@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MASTER Architectural Fabrication Studio — Custom Fabrication, New York</title>
+<meta name="description" content="Demo concept for MASTER Architectural Fabrication Studio: custom fabrication in metal, glass, wood, artisan plaster and cementitious materials. Showroom at 307 West 38th Street, Suite 1001, New York, NY 10018.">
+<script>(function(){var t=null;try{t=localStorage.getItem("master-theme");}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);})();</script>
+<style>
+:root{--bg:#f6f3ee;--surface:#fff;--ink:#1d1a16;--muted:#6b6259;--line:#ddd5c9;--accent:#8a5a2b;--accent2:#2f5d5a;--card:#efe9df}
+[data-theme="dark"]{--bg:#171512;--surface:#221f1b;--ink:#f2ede5;--muted:#b3a99c;--line:#3d382f;--accent:#d99a55;--accent2:#7fb5b0;--card:#2a2620}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:var(--bg);color:var(--ink)}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;max-width:1100px;margin:0 auto}
+.logo{font-weight:700;letter-spacing:.08em}.logo small{display:block;font-weight:400;letter-spacing:.02em;color:var(--muted);font-size:13px}
+#theme-toggle{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer;font-size:15px}
+nav{display:flex;gap:16px;flex-wrap:wrap;padding:0 20px 10px;max-width:1100px;margin:0 auto}nav a{color:var(--accent);text-decoration:none}
+.hero{max-width:1100px;margin:0 auto;padding:28px 20px 10px}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 12px}.hero p{font-size:18px;color:var(--muted);max-width:640px}
+.badge{display:inline-block;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-family:Arial,sans-serif;font-size:13px}
+.badge.open{border-color:#2e7d4f;color:#2e7d4f}.badge.closed{color:#a33}
+section{max-width:1100px;margin:0 auto;padding:28px 20px}h2{font-size:28px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 18px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.filters button{font-family:Arial,sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;cursor:pointer}.filters button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.visual{height:150px;display:flex;align-items:flex-end;padding:12px;font-family:Arial,sans-serif;font-size:12px;color:#fff;text-shadow:0 1px 4px #000}
+.visual span{background:rgba(0,0,0,.55);padding:4px 8px;border-radius:6px}
+.metal{background:linear-gradient(135deg,#8d9299,#3c4148)} .glass{background:linear-gradient(135deg,#9fc6cc,#3f6d78)} .wood{background:linear-gradient(135deg,#a9743f,#5a3a1c)} .plaster{background:linear-gradient(135deg,#e3d9c6,#9a8f78)}
+.card-body{padding:14px}.card-body h3{margin:0 0 6px}.card-body p{margin:0;color:var(--muted);font-size:15px}.tag{font-family:Arial,sans-serif;font-size:12px;color:var(--accent)}
+ul{line-height:1.7}form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px;max-width:640px}
+label{font-family:Arial,sans-serif;font-size:14px}input,select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:16px}
+.btn{font-family:Arial,sans-serif;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:12px 18px;cursor:pointer;font-size:16px}.btn.sec{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}#summary{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;white-space:pre-wrap;font-family:Arial,sans-serif;font-size:15px}
+footer{max-width:1100px;margin:0 auto;padding:28px 20px 40px;color:var(--muted);font-size:14px;line-height:1.7;border-top:1px solid var(--line)}
+.rep{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);padding:8px 14px 0}
+@media(max-width:600px){nav{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">MASTER<small>Architectural Fabrication Studio</small></div>
+<button id="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle dark / light mode">☾ / ☀</button>
+</header>
+<nav><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#visit">Showroom</a><a href="#inquiry">Project inquiry</a></nav>
+<div class="hero">
+<span class="badge" id="open-badge">Mon–Fri 10 AM–5 PM</span>
+<h1>Custom fabrication, made to hold the room.</h1>
+<p>Metal, glass, wood, artisan plaster and cementitious materials — fabricated for residential, corporate, hospitality and retail spaces, with proprietary material applications and “green formulations.”</p>
+<p><a class="btn" href="#inquiry" style="text-decoration:none;display:inline-block">Start a project inquiry</a> &nbsp; <a href="tel:+19174144262">Call 917-414-4262</a></p>
+<p style="font-size:15px;color:var(--muted)">Pricing is quote / project-based. No prices are published on this page.</p>
+</div>
+
+<section id="portfolio">
+<h2>Project portfolio</h2>
+<p class="sub">Filter by material and sector. Project visuals on this demo are representative illustrations, not photos of this studio’s work.</p>
+<div class="filters" id="mat-filters">
+<button class="active" data-filter="all">All materials</button><button data-filter="metal">Metal</button><button data-filter="glass">Glass</button><button data-filter="wood">Wood</button><button data-filter="plaster">Plaster</button>
+</div>
+<div class="filters" id="sec-filters">
+<button class="active" data-filter="all">All sectors</button><button data-filter="hospitality">Hospitality</button><button data-filter="retail">Retail</button><button data-filter="residential">Residential</button>
+</div>
+<div class="grid" id="grid">
+<article class="card" data-material="metal" data-sector="hospitality"><div class="visual metal"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Metal · Hospitality</span><h3>Hotel lobby metalwork</h3><p>Custom-fabricated metal features for a hospitality interior.</p></div></article>
+<article class="card" data-material="glass" data-sector="retail"><div class="visual glass"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Glass · Retail</span><h3>Retail glass feature</h3><p>Custom glass elements for a retail environment.</p></div></article>
+<article class="card" data-material="wood" data-sector="residential"><div class="visual wood"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Wood · Residential</span><h3>Residential woodwork</h3><p>Custom wood fabrication for a home interior.</p></div></article>
+<article class="card" data-material="plaster" data-sector="hospitality"><div class="visual plaster"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Plaster · Hospitality</span><h3>Artisan plaster wall</h3><p>Artisan plaster and cementitious finishes for a hospitality space.</p></div></article>
+<article class="card" data-material="metal" data-sector="retail"><div class="visual metal"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Metal · Retail</span><h3>Retail metal fixtures</h3><p>Custom metal fixtures and furniture for retail.</p></div></article>
+<article class="card" data-material="glass" data-sector="residential"><div class="visual glass"><span>Representative illustration</span></div><div class="card-body"><span class="tag">Glass · Residential</span><h3>Residential glasswork</h3><p>Custom glass for a residential project.</p></div></article>
+</div>
+<p id="no-results" style="display:none;color:var(--muted)">No projects match that combination yet — try another filter.</p>
+</section>
+
+<section id="services">
+<h2>What the studio fabricates</h2>
+<ul>
+<li>Custom fabrication in metal, glass, wood, artisan plaster and cementitious materials</li>
+<li>Furniture</li>
+<li>Proprietary material applications and “green formulations”</li>
+<li>Workshops around the metro area</li>
+<li>Sectors: residential, corporate, hospitality, retail</li>
+</ul>
+</section>
+
+<section id="visit">
+<h2>Showroom</h2>
+<p>307 West 38th Street, Suite 1001, New York, NY 10018<br>Hours: Mon–Fri 10 AM–5 PM<br>Phone: <a href="tel:+19174144262">917-414-4262</a><br>Email: <a href="mailto:info@masterarchitecturalfabrication.com">info@masterarchitecturalfabrication.com</a></p>
+</section>
+
+<section id="inquiry">
+<h2>Project inquiry</h2>
+<p class="sub">Fill this in and use Call, Text, or Copy to send it to the studio. Nothing is submitted or saved by this demo page.</p>
+<form id="form" onsubmit="return false">
+<label>Your name<input id="f-name" type="text" placeholder="Full name"></label>
+<label>Phone<input id="f-phone" type="tel" placeholder="Phone number"></label>
+<label>What do you need?
+<select id="f-need"><option>Custom fabrication — metal</option><option>Custom fabrication — glass</option><option>Custom fabrication — wood</option><option>Artisan plaster / cementitious</option><option>Furniture</option><option>Other project</option></select></label>
+<label>Project notes<textarea id="f-notes" rows="4" placeholder="Sector, space, dimensions, timeline…"></textarea></label>
+<button class="btn" type="button" id="build">Compose summary</button>
+<div id="summary" aria-live="polite">Your call / text-ready summary will appear here.</div>
+<div class="actions">
+<a class="btn sec" id="call-btn" href="tel:+19174144262">Call 917-414-4262</a>
+<a class="btn sec" id="text-btn" href="sms:+19174144262">Text the studio</a>
+<button class="btn sec" type="button" id="copy-btn">Copy summary</button>
+</div>
+</form>
+</section>
+
+<footer>
+<p>Demo concept — not the official site<br>Demo built by PYMTW Web Design</p>
+<p>© 2026 PYMTW Web Design — demo created for evaluation purposes only; not to be copied or reused without written permission.</p>
+</footer>
+<script>
+var tg=document.getElementById("theme-toggle");
+tg.addEventListener("click",function(){var cur=document.documentElement.getAttribute("data-theme");var next=cur==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",next);try{localStorage.setItem("master-theme",next);}catch(e){}});
+(function(){var now=new Date();var day=now.getDay();var mins=now.getHours()*60+now.getMinutes();var open=day>=1&&day<=5&&mins>=600&&mins<1020;var b=document.getElementById("open-badge");b.textContent=open?"Open now · Mon–Fri 10 AM–5 PM":"Currently closed · Mon–Fri 10 AM–5 PM";b.classList.add(open?"open":"closed");})();
+var mf="all",sf="all";
+function apply(){var shown=0;document.querySelectorAll("#grid .card").forEach(function(c){var ok=(mf==="all"||c.dataset.material===mf)&&(sf==="all"||c.dataset.sector===sf);c.style.display=ok?"":"none";if(ok)shown++;});document.getElementById("no-results").style.display=shown?"none":"";}
+document.querySelectorAll("#mat-filters button").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll("#mat-filters button").forEach(function(x){x.classList.remove("active");});b.classList.add("active");mf=b.dataset.filter;apply();});});
+document.querySelectorAll("#sec-filters button").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll("#sec-filters button").forEach(function(x){x.classList.remove("active");});b.classList.add("active");sf=b.dataset.filter;apply();});});
+function compose(){var s="Project inquiry — MASTER Architectural Fabrication Studio\nNeed: "+document.getElementById("f-need").value+"\nName: "+document.getElementById("f-name").value+"\nPhone: "+document.getElementById("f-phone").value+"\nNotes: "+document.getElementById("f-notes").value;document.getElementById("summary").textContent=s;document.getElementById("text-btn").href="sms:+19174144262?&body="+encodeURIComponent(s);return s;}
+document.getElementById("build").addEventListener("click",compose);
+document.getElementById("copy-btn").addEventListener("click",function(){var s=compose();if(navigator.clipboard){navigator.clipboard.writeText(s).then(function(){document.getElementById("copy-btn").textContent="Copied!";});}else{document.getElementById("copy-btn").textContent="Select the summary text to copy";}});
+</script>
+</body>
+</html>
