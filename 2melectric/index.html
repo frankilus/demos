@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Demo concept site for 2M Electric Inc — panel upgrades, EV charger installation, outlet and switch repair, and lighting and fixture installation in Los Angeles, CA.">
+<title>2M Electric Inc — Electricians in Los Angeles, CA | Panel Upgrades &amp; EV Chargers</title>
+<script>(function(){var t=null;try{t=localStorage.getItem('2m-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+:root{color-scheme:light;--bg:#f5f6f8;--bg2:#e9edf2;--surface:#ffffff;--ink:#141a22;--soft:#4c5766;--faint:#7d8896;--line:#dde3ea;--accent:#0b4f8a;--accent-ink:#ffffff;--amber:#f5a623;--amber-soft:#fff4d6;--good:#1e7d4f;--bad:#b3402f;--shadow:0 18px 44px rgba(15,45,80,.14);--radius:18px}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#10151c;--bg2:#1a2230;--surface:#1b2331;--ink:#eef2f7;--soft:#b7c1cf;--faint:#8b96a5;--line:#2c3646;--accent:#6db1f2;--accent-ink:#0b1526;--amber:#f2b63c;--amber-soft:#3a2f12;--good:#4cc084;--bad:#ff7a6b;--shadow:0 18px 44px rgba(0,0,0,.5)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--accent)}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.head{max-width:1120px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;gap:12px}
+.brand{font-weight:800;font-size:22px;letter-spacing:.2px;line-height:1.1}.brand span{color:var(--accent)}.brand small{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);font-weight:400}
+nav{margin-left:auto;display:flex;gap:16px;font-size:14px}nav a{text-decoration:none;color:var(--ink)}
+#theme-toggle{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;width:40px;height:40px;font-size:19px;cursor:pointer;flex:none}
+.callbtn{background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:9px 14px;border-radius:999px;font-size:14px;white-space:nowrap;font-weight:700}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px 60px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:36px 0 8px}
+.hero h1{font-size:42px;line-height:1.12;margin:14px 0 12px}.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:17px;color:var(--soft)}
+figure{margin:0}figure img{width:100%;height:100%;object-fit:cover;display:block;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3}
+figcaption{font-size:12px;color:var(--faint);margin-top:8px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 13px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--good);flex:none}.dot.closed{background:var(--bad)}.dot.appt{background:var(--amber)}
+.lic{display:inline-block;margin-left:8px;font-size:13px;background:var(--amber-soft);border:1px solid var(--amber);border-radius:999px;padding:7px 13px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btnrow a,.btnrow button{border:0;border-radius:999px;padding:12px 20px;font-size:15px;cursor:pointer;text-decoration:none}
+.primary{background:var(--accent);color:var(--accent-ink);font-weight:700}.ghost{background:var(--bg2);color:var(--ink);border:1px solid var(--line)}
+h2{font-size:29px;margin:46px 0 6px}.sub{color:var(--soft);margin:0 0 18px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--soft);font-size:15px}
+.svc{padding:0;overflow:hidden}.svc img{width:100%;height:190px;object-fit:cover;display:block}
+.svc .in{padding:18px 20px}.svc .in p{color:var(--soft);font-size:15px;margin:6px 0 0}
+.svc .tag{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--faint)}
+.photolabel{font-size:12px;color:var(--faint);padding:0 20px 14px}
+.wizard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.step{display:none}.step.on{display:block}
+.choices{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.choices button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer;font-size:15px}
+.choices button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.wiznav{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.wiznav button{border:0;border-radius:999px;padding:11px 18px;font-size:15px;cursor:pointer}
+form label{display:block;font-size:14px;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-size:16px}
+textarea{min-height:110px}
+.note{font-size:14px;color:var(--soft)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+details summary{cursor:pointer;font-weight:700}
+details p{color:var(--soft)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:28px 18px;text-align:center;font-size:13px;color:var(--faint)}
+footer p{margin:5px 0}
+@media(max-width:760px){.hero,.grid2,.grid3{grid-template-columns:1fr}.hero h1{font-size:31px}nav{display:none}.brand{font-size:19px}.callbtn{padding:9px 12px}}
+</style>
+</head>
+<body>
+<header><div class="head">
+<div class="brand">2M <span>ELECTRIC</span> INC<small>Los Angeles, CA &middot; CA License 1093957</small></div>
+<nav><a href="#services">Services</a><a href="#request">Request a Visit</a><a href="#hours">Hours &amp; Contact</a></nav>
+<button id="theme-toggle" aria-label="Toggle dark and light mode">☾</button>
+<a class="callbtn" href="tel:+13233642098">Call (323) 364-2098</a>
+</div></header>
+<div class="wrap">
+<section class="hero">
+<div>
+<span class="badge" id="open-badge"><span class="dot" id="open-dot"></span><span id="open-text">Checking hours&hellip;</span></span>
+<span class="lic">CA License 1093957</span>
+<h1>Power done right, <em>from small repairs to large installations.</em></h1>
+<p>2M Electric Inc handles small residential repairs to large commercial installations — panel upgrades, EV charger installation, outlet and switch repair, and lighting and fixture installation. 10+ years of experience, serving Los Angeles, CA.</p>
+<p><strong>Visit or call:</strong> 1070 S Corning St, Los Angeles, CA 90035<br>
+<strong>Phone:</strong> <a href="tel:+13233642098">(323) 364-2098</a></p>
+<div class="btnrow"><a class="primary" href="#request">Describe your job — get a call-ready summary</a><a class="ghost" href="tel:+13233642098">Call (323) 364-2098</a></div>
+<p class="note">Pricing is not published on this page — confirm by phone for your job.</p>
+</div>
+<figure><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="An electrician working on electrical equipment"><figcaption>Representative photo — an electrician at work on electrical equipment. This is not a photo of 2M Electric's staff or of a 2M job.</figcaption></figure>
+</section>
+
+<section class="grid3">
+<div class="card"><h3>Residential &amp; commercial</h3><p>From a single outlet repair at home to large commercial installations.</p></div>
+<div class="card"><h3>10+ years of experience</h3><p>Electrical installations and repairs, done with care for the home or business around them.</p></div>
+<div class="card"><h3>One number to reach us</h3><p>Call <a href="tel:+13233642098">(323) 364-2098</a> — the fastest way to confirm scope, timing, and pricing for your job.</p></div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<p class="sub">Photo-forward, plain-English services. No prices are published — confirm by phone for your job.</p>
+<div class="grid3">
+<article class="card svc"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="An electrician working on electrical equipment"><div class="in"><div class="tag">Panels</div><h3>Panel upgrades</h3><p>Upgrade an aging or undersized panel so your home or business can safely run what it needs today.</p></div><p class="photolabel">Representative photo — an electrician at work, not a 2M Electric job.</p></article>
+<article class="card svc"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="An electric vehicle plugged in to charge"><div class="in"><div class="tag">EV charging</div><h3>EV charger installation</h3><p>Home or commercial charger installation, wired for daily charging without tripping the rest of the building.</p></div><p class="photolabel">Representative photo — an EV charger, not a 2M Electric job.</p></article>
+<article class="card svc"><img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A pendant light fixture"><div class="in"><div class="tag">Lighting</div><h3>Lighting &amp; fixture installation</h3><p>Lighting and fixture installation that brightens the room and finishes the space properly.</p></div><p class="photolabel">Representative photo — a pendant light fixture, not a 2M Electric job.</p></article>
+</div>
+<div class="grid2" style="margin-top:16px">
+<div class="card"><h3>Outlet &amp; switch repair</h3><p>Dead outlets, loose switches, flickering or faulty devices — diagnosed and repaired. Confirm by phone: <a href="tel:+13233642098">(323) 364-2098</a>.</p></div>
+<div class="card"><h3>General electrical installations &amp; repairs</h3><p>General electrical work for homes and businesses, from small residential repairs to large commercial installations. Confirm by phone: <a href="tel:+13233642098">(323) 364-2098</a>.</p></div>
+</div>
+</section>
+
+<section id="request">
+<h2>Request a visit</h2>
+<p class="sub">Four quick steps, then your details. The result is a call/text-ready summary — nothing is submitted anywhere from this demo page.</p>
+<div class="wizard">
+<div class="step on" id="step1">
+<p><strong>Step 1 of 4 — What do you need?</strong></p>
+<div class="choices" id="c-need">
+<button class="on">Panel upgrade</button><button>EV charger installation</button><button>Outlet / switch repair</button><button>Lighting / fixture installation</button><button>General installation or repair</button>
+</div>
+<div class="wiznav"><button class="primary" onclick="goStep(2)">Next →</button></div>
+</div>
+<div class="step" id="step2">
+<p><strong>Step 2 of 4 — Home or business?</strong></p>
+<div class="choices" id="c-prop">
+<button class="on">Home</button><button>Business</button><button>Something else</button>
+</div>
+<div class="wiznav"><button class="ghost" onclick="goStep(1)">← Back</button><button class="primary" onclick="goStep(3)">Next →</button></div>
+</div>
+<div class="step" id="step3">
+<p><strong>Step 3 of 4 — When?</strong></p>
+<div class="choices" id="c-when">
+<button class="on">As soon as possible</button><button>This week</button><button>Planning ahead</button>
+</div>
+<div class="wiznav"><button class="ghost" onclick="goStep(2)">← Back</button><button class="primary" onclick="goStep(4)">Continue to contact details →</button></div>
+</div>
+<div class="step" id="step4">
+<p><strong>Your details</strong></p>
+<form onsubmit="return false">
+<label for="f-name">Your name</label><input id="f-name" type="text" placeholder="Your name">
+<label for="f-phone">Your phone</label><input id="f-phone" type="tel" placeholder="Your phone number">
+<label for="f-place">Property (optional)</label><input id="f-place" type="text" placeholder="e.g. House in Los Angeles, shop on Corning St">
+<label for="f-notes">Details</label><textarea id="f-notes" placeholder="e.g. Panel make and age, charger model, which outlets stopped working, rooms for new lighting"></textarea>
+<label for="f-summary">Your message — ready to send</label><textarea id="f-summary" readonly></textarea>
+<div class="btnrow">
+<a class="primary" id="btn-call" href="tel:+13233642098">Call (323) 364-2098</a>
+<a class="ghost" id="btn-text" href="sms:+13233642098">Text this summary</a>
+<button class="ghost" type="button" id="btn-copy">Copy summary</button>
+</div>
+<p class="note" id="copy-note"></p>
+</form>
+<div class="wiznav"><button class="ghost" onclick="goStep(3)">← Back</button></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Good to know before you call</h2>
+<p class="sub">General information only — your job's scope, safety requirements, and pricing are confirmed by phone.</p>
+<details><summary>What should I have ready for a panel upgrade call?</summary><p>Your panel's location, its approximate age, and what is tripping or running short — a photo of the panel label helps the conversation, and the installer confirms the rest on site.</p></details>
+<details><summary>What should I have ready for an EV charger call?</summary><p>The charger model (or the vehicle), where you park, and how far that spot is from your panel. The installer confirms circuit capacity and routing before any work starts.</p></details>
+<details><summary>Do you handle both small and large jobs?</summary><p>Yes — the range runs from small residential repairs to large commercial installations. Describe the job in the form above and call to confirm scope and timing.</p></details>
+</section>
+
+<section id="hours">
+<h2>Hours &amp; contact</h2>
+<div class="grid2">
+<div class="card"><h3>Office hours</h3>
+<table>
+<tr><th>Day</th><th>Hours</th></tr>
+<tr><td>Monday – Friday</td><td>7 AM – 7 PM</td></tr>
+<tr><td>Saturday</td><td>Closed</td></tr>
+<tr><td>Sunday</td><td>By appointment</td></tr>
+</table>
+<p class="note" style="margin-top:10px">Hours shown are the business's published hours. Sunday visits are by appointment — call to arrange one.</p></div>
+<div class="card"><h3>Contact</h3><p><strong>2M Electric Inc</strong><br>1070 S Corning St, Los Angeles, CA 90035<br>Phone: <a href="tel:+13233642098">(323) 364-2098</a><br>CA License 1093957</p><p style="margin-top:10px">No individual review quotes are shown on this demo.</p></div>
+</div>
+</section>
+</div>
+<footer>
+<p>Demo concept — not the official site</p>
+<p>Demo built by PYMTW Web Design</p>
+<p>© 2026 PYMTW Web Design — demo created for evaluation purposes only; not to be copied or reused without written permission.</p>
+</footer>
+<script>
+(function(){
+var btn=document.getElementById('theme-toggle');
+function paint(){var d=document.documentElement.getAttribute('data-theme');btn.textContent=d==='dark'?'☀':'☾';btn.setAttribute('aria-label',d==='dark'?'Switch to light mode':'Switch to dark mode');}
+btn.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('2m-theme',n);}catch(e){}paint();});paint();
+var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+var day=parts.find(function(p){return p.type==='weekday';}).value, hour=parseInt(parts.find(function(p){return p.type==='hour';}).value,10);
+var dot=document.getElementById('open-dot'), txt=document.getElementById('open-text');
+if(day==='Sat'){txt.textContent='Closed today (Saturday) — open Mon–Fri 7 AM–7 PM';dot.classList.add('closed');}
+else if(day==='Sun'){txt.textContent='Sunday — by appointment only, call (323) 364-2098 to arrange';dot.classList.add('appt');}
+else if(hour>=7&&hour<19){txt.textContent='Open now — Mon–Fri 7 AM–7 PM';}
+else{txt.textContent='Currently closed — open Mon–Fri 7 AM–7 PM, Sun by appointment';dot.classList.add('closed');}
+window.goStep=function(n){document.querySelectorAll('.step').forEach(function(s){s.classList.remove('on');});document.getElementById('step'+n).classList.add('on');build();var el=document.getElementById('request');if(el){window.scrollTo({top:el.offsetTop-80,behavior:'smooth'});}};
+function pick(id){var el=document.getElementById(id);return el.querySelector('button.on').textContent;}
+document.querySelectorAll('.choices').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');build();});});});
+var name=document.getElementById('f-name'),phone=document.getElementById('f-phone'),place=document.getElementById('f-place'),notes=document.getElementById('f-notes'),sum=document.getElementById('f-summary');
+function build(){sum.value='Hi 2M Electric, I need help with an electrical job.\nService: '+pick('c-need')+'\nProperty: '+pick('c-prop')+'\nTiming: '+pick('c-when')+'\nName: '+(name.value||'[your name]')+'\nPhone: '+(phone.value||'[your phone]')+'\nProperty / location: '+(place.value||'—')+'\nDetails: '+(notes.value||'—');
+document.getElementById('btn-text').href='sms:+13233642098?&body='+encodeURIComponent(sum.value);}
+[name,phone,place,notes].forEach(function(el){el.addEventListener('input',build);});build();
+document.getElementById('btn-copy').addEventListener('click',function(){build();if(navigator.clipboard){navigator.clipboard.writeText(sum.value).then(function(){document.getElementById('copy-note').textContent='Copied — paste it into any message.';});}else{sum.select();document.execCommand('copy');document.getElementById('copy-note').textContent='Copied — paste it into any message.';}});
+})();
+</script>
+</body>
+</html>
