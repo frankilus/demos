@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Demo concept site for Quality Commercial Roofing — commercial flat and metal roofing, roof coatings, repair and replacement in the Greater Houston area. Free on-site inspection and free estimate.">
+<title>Quality Commercial Roofing — Commercial Roofing in Houston, TX</title>
+<script>(function(){var t=null;try{t=localStorage.getItem('qcr-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+:root{color-scheme:light;--bg:#f2f4f6;--bg2:#e7ebef;--surface:#ffffff;--ink:#141c26;--soft:#4c5a6b;--faint:#7d8896;--line:#dde3e9;--accent:#0b3d66;--accent2:#e07b1f;--good:#1e7d4f;--bad:#b3402f;--shadow:0 16px 40px rgba(11,61,102,.14);--radius:16px}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#10161e;--bg2:#18202c;--surface:#1a2330;--ink:#eef2f7;--soft:#b9c2cf;--faint:#8b96a5;--line:#2c3745;--accent:#6db1f2;--accent2:#f2a03c;--good:#4cc084;--bad:#ff7a6b;--shadow:0 16px 40px rgba(0,0,0,.5)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--accent)}header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.head{max-width:1120px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;gap:14px}
+.logo{font-weight:800;font-size:20px;letter-spacing:.2px;line-height:1.1}.logo small{display:block;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent2);font-weight:700}
+.logo .roofline{display:inline-block;width:34px;height:10px;margin-right:8px;background:var(--accent2);clip-path:polygon(0 100%,50% 0,100% 100%,82% 100%,50% 30%,18% 100%)}
+nav{margin-left:auto;display:flex;gap:16px;font-size:14px}nav a{text-decoration:none;color:var(--ink)}
+#theme-toggle{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;width:40px;height:40px;font-size:19px;cursor:pointer;flex:none}
+.callbtn{background:var(--accent);color:#fff;text-decoration:none;padding:9px 14px;border-radius:999px;font-size:14px;white-space:nowrap}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px 60px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:34px 0 8px}
+.hero h1{font-size:42px;line-height:1.12;margin:0 0 12px}.hero h1 span{color:var(--accent2)}.hero p{font-size:17px;color:var(--soft)}
+figure{margin:0}figure img{width:100%;height:auto;display:block;border-radius:var(--radius);box-shadow:var(--shadow)}
+figcaption{font-size:12px;color:var(--faint);margin-top:8px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 13px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--good)}.dot.closed{background:var(--bad)}
+.emerg{display:inline-block;margin:8px 0 0;font-size:14px;background:#fff3d6;border:1px solid var(--accent2);border-radius:999px;padding:7px 13px;color:#6b4a00}
+:root[data-theme="dark"] .emerg{background:#3a2f12;color:#f2c96b}
+.ctarow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.ctarow a{border-radius:999px;padding:12px 20px;font-size:15px;text-decoration:none;font-weight:700}
+.cta-primary{background:var(--accent2);color:#fff}.cta-ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center}
+.stat b{display:block;font-size:22px}.stat span{font-size:13px;color:var(--soft)}
+h2{font-size:28px;margin:44px 0 6px}.sub{color:var(--soft);margin:0 0 18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.card figure img{height:190px;object-fit:cover}
+.card h3{margin:14px 0 6px;font-size:18px}.card p{margin:0;color:var(--soft);font-size:15px}
+.card .tag{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--accent)}
+.steps{counter-reset:step}.stepcard{position:relative;padding-top:8px}.stepcard b{font-size:28px;color:var(--accent2)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+details summary{cursor:pointer;font-weight:700}details p{color:var(--soft)}
+form label{display:block;font-size:14px;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-size:16px}
+textarea{min-height:110px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btnrow a,.btnrow button{border:0;border-radius:999px;padding:11px 18px;font-size:15px;cursor:pointer;text-decoration:none}
+.primary{background:var(--accent);color:#fff}.ghost{background:var(--bg2);color:var(--ink);border:1px solid var(--line)}
+#summaryBox{display:none;margin-top:16px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:16px}
+#summaryBox pre{white-space:pre-wrap;font-family:inherit;margin:0 0 12px}
+.note{font-size:14px;color:var(--soft)}
+footer{border-top:1px solid var(--line);padding:28px 18px;text-align:center;font-size:13px;color:var(--faint)}
+footer p{margin:5px 0}
+@media(max-width:760px){.hero,.grid2,.grid3,.stats{grid-template-columns:1fr}.hero h1{font-size:30px}nav{display:none}.callbtn{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="head">
+<div class="logo"><span class="roofline"></span>QUALITY COMMERCIAL ROOFING<small>Houston, Texas</small></div>
+<nav><a href="#services">Services</a><a href="#why">Why Us</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+<button id="theme-toggle" aria-label="Toggle dark or light mode">◐</button>
+<a class="callbtn" href="tel:+18323527997">(832) 352-7997</a>
+</div>
+</header>
+<div class="wrap">
+
+<section class="hero">
+<div>
+<span class="badge"><span class="dot" id="openDot"></span><span id="openText">Checking hours…</span></span>
+<p class="emerg">24-hour emergency service available — call any time for an active leak or storm damage.</p>
+<h1>Commercial roofs built to take <span>Houston weather</span> — and keep taking it.</h1>
+<p>Certified specialists for flat and metal roofs. From a free on-site inspection to repair, coating, or full replacement, one crew handles your building's roof end to end — with workmanship guaranteed on all repairs.</p>
+<div class="ctarow">
+<a class="cta-primary" href="tel:+18323527997">Call (832) 352-7997</a>
+<a class="cta-ghost" href="#quote">Get a Free Estimate</a>
+</div>
+<p class="note">Free on-site inspection &middot; Free estimate &middot; Pricing confirmed by phone — no guesswork, no surprises.</p>
+</div>
+<figure>
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" alt="A modern commercial building">
+<figcaption>Representative photo</figcaption>
+</figure>
+</section>
+
+<section class="stats">
+<div class="stat"><b>30+ years</b><span>of commercial roofing experience</span></div>
+<div class="stat"><b>Free</b><span>on-site inspection &amp; estimate</span></div>
+<div class="stat"><b>Flat &amp; Metal</b><span>certified specialists</span></div>
+<div class="stat"><b>24-hour</b><span>emergency service</span></div>
+</section>
+
+<h2 id="services">Photo-forward services</h2>
+<p class="sub">Every service starts with a free inspection. Tell us what your roof is doing — leaking, aging, ponding, storm-damaged — and we will confirm the right fix by phone.</p>
+<section class="grid3">
+<article class="card">
+<figure><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80" alt="A commercial building with a flat roofline"><figcaption>Representative photo</figcaption></figure>
+<h3>Flat Roofs</h3>
+<p>New roofs, repairs, and ongoing maintenance for flat commercial systems — the workhorse roof for warehouses, offices, and retail across Greater Houston.</p>
+<span class="tag">Confirm scope &amp; pricing by phone →</span>
+</article>
+<article class="card">
+<figure><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80" alt="Steel structure work on a commercial building"><figcaption>Representative photo</figcaption></figure>
+<h3>Metal Roofs</h3>
+<p>Galvanized metal and R-panel in 24 or 26 gauge — durable, long-lasting systems installed by specialists who work with metal every day.</p>
+<span class="tag">Confirm scope &amp; pricing by phone →</span>
+</article>
+<article class="card">
+<figure><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Construction crew working at height"><figcaption>Representative photo</figcaption></figure>
+<h3>Repair &amp; Replacement</h3>
+<p>From targeted leak repairs to full replacement, using roofing materials that carry significant manufacturers' warranties. Workmanship guaranteed on all repairs.</p>
+<span class="tag">Confirm scope &amp; pricing by phone →</span>
+</article>
+<article class="card">
+<figure><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80" alt="A roofing professional inspecting a building"><figcaption>Representative photo</figcaption></figure>
+<h3>Roof Coatings</h3>
+<p>Mule-Hide Roofing coatings that extend the life and energy efficiency of your existing roof — often the smart alternative to a full tear-off.</p>
+<span class="tag">Confirm scope &amp; pricing by phone →</span>
+</article>
+<article class="card">
+<h3>Free Inspections</h3>
+<p>A certified specialist comes out, inspects your roof at no charge, and gives you a free estimate — before you commit to anything.</p>
+<span class="tag">Book your free inspection →</span>
+</article>
+<article class="card">
+<h3>Storm Damage Restoration</h3>
+<p>Leaks, storm damage, and unsightly wear — assessed on site, documented, and restored so your building is protected again.</p>
+<span class="tag">Call for emergency help →</span>
+</article>
+</section>
+
+<h2 id="why">Why building owners call Quality</h2>
+<section class="grid2">
+<div class="card"><h3>One crew, start to finish</h3><p>Inspection, estimate, repair or replacement — handled by the same certified specialists, so nothing gets lost between visits.</p></div>
+<div class="card"><h3>Free inspection, free estimate</h3><p>Know exactly what your roof needs and what it will take before any work begins. Pricing is confirmed by phone.</p></div>
+<div class="card"><h3>Workmanship guaranteed</h3><p>All repairs carry a workmanship guarantee, and replacement materials carry significant manufacturers' warranties.</p></div>
+<div class="card"><h3>Serving Greater Houston</h3><p>Houston, Spring, The Woodlands, Cypress, Katy, and the Dallas areas. If your building is in the region, call and confirm coverage.</p></div>
+</section>
+
+<h2 id="process">How it works</h2>
+<section class="grid3">
+<div class="card stepcard"><b>1</b><h3>Call or request</h3><p>Call (832) 352-7997 or send the request below. Tell us the building, the roof type, and what you are seeing.</p></div>
+<div class="card stepcard"><b>2</b><h3>Free on-site inspection</h3><p>A certified specialist inspects the roof and explains what it needs — repair, coating, or replacement — in plain terms.</p></div>
+<div class="card stepcard"><b>3</b><h3>Free estimate, then work</h3><p>You get a free estimate with pricing confirmed by phone. Work starts when you approve it — guaranteed workmanship throughout.</p></div>
+</section>
+
+<h2>Common questions</h2>
+<details><summary>Do you offer free inspections?</summary><p>Yes. Certified specialists inspect your roof at no charge and provide a free estimate.</p></details>
+<details><summary>Repair or replace — how do I know?</summary><p>That is exactly what the free inspection answers. Leaks, appearance, storm damage, and cooling costs can all point to different fixes — including a coating that extends your current roof's life. The inspection gives you the straight answer.</p></details>
+<details><summary>Do you handle emergencies?</summary><p>Yes — 24-hour emergency service is available. Call (832) 352-7997 any time for an active leak or storm damage.</p></details>
+<details><summary>What areas do you serve?</summary><p>The Greater Houston area, including Houston, Spring, The Woodlands, Cypress, and Katy, plus the Dallas areas. Call to confirm coverage for your building.</p></details>
+<details><summary>How is pricing handled?</summary><p>Pricing is confirmed by phone after the free inspection, so the figure you get reflects your actual roof — not a generic rate.</p></details>
+
+<h2 id="quote">Request your free estimate</h2>
+<p class="sub">Fill this in and it builds a call- and text-ready summary — copy it, or send it straight to the team.</p>
+<section class="card" id="contact">
+<form id="quoteForm" onsubmit="return false;">
+<label for="qName">Your name</label>
+<input id="qName" type="text" placeholder="e.g. Jordan Smith">
+<label for="qBuilding">Building type</label>
+<select id="qBuilding"><option>Warehouse</option><option>Office building</option><option>Retail / shopping center</option><option>Industrial facility</option><option>Other commercial building</option></select>
+<label for="qRoof">Roof type</label>
+<select id="qRoof"><option>Flat roof</option><option>Metal roof</option><option>Not sure</option></select>
+<label for="qService">What do you need?</label>
+<select id="qService"><option>Free inspection</option><option>Roof repair</option><option>Roof replacement</option><option>Roof coating</option><option>Storm damage restoration</option><option>Roof maintenance</option></select>
+<label for="qMsg">What is the roof doing? (optional)</label>
+<textarea id="qMsg" placeholder="e.g. Leak near the loading dock after heavy rain…"></textarea>
+<div class="btnrow">
+<button class="primary" type="button" onclick="buildSummary()">Build my summary</button>
+<a class="ghost" href="tel:+18323527997">Call (832) 352-7997</a>
+</div>
+<div id="summaryBox">
+<pre id="summaryText"></pre>
+<div class="btnrow">
+<button class="primary" type="button" onclick="copySummary()">Copy summary</button>
+<a class="ghost" id="smsLink" href="#">Text this summary</a>
+</div>
+<p class="note" id="copyNote"></p>
+</div>
+</form>
+<p class="note">Prefer email? Write to <a href="mailto:qualitycommercialroofing1@gmail.com">qualitycommercialroofing1@gmail.com</a> and paste your summary.</p>
+</section>
+
+<h2>Visit or call</h2>
+<section class="grid2">
+<div class="card"><h3>Quality Commercial Roofing</h3><p>8524 Highway 6 North, #433<br>Houston, TX<br>Phone: <a href="tel:+18323527997">(832) 352-7997</a><br>Email: <a href="mailto:qualitycommercialroofing1@gmail.com">qualitycommercialroofing1@gmail.com</a></p></div>
+<div class="card"><h3>Hours</h3><p><span id="hoursLine">Open daily, 9:00 AM – 5:00 PM</span><br><span id="openLine2"></span><br>24-hour emergency service available — call any time.</p></div>
+</section>
+
+</div>
+<footer>
+<p>Demo concept — not the official site</p>
+<p>Demo built by PYMTW Web Design</p>
+<p>© 2026 PYMTW Web Design — demo created for evaluation purposes only; not to be copied or reused without written permission.</p>
+</footer>
+<script>
+document.getElementById('theme-toggle').addEventListener('click',function(){var cur=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',cur);try{localStorage.setItem('qcr-theme',cur);}catch(e){}});
+(function(){try{var fmt=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'numeric',hour12:false});var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',hour12:false}).formatToParts(new Date());var h=0;parts.forEach(function(p){if(p.type==='hour'){h=parseInt(p.value,10);}});var open=h>=9&&h<17;var dot=document.getElementById('openDot');var txt=document.getElementById('openText');var line2=document.getElementById('openLine2');if(open){dot.classList.remove('closed');txt.textContent='Open now · 9:00 AM – 5:00 PM today';line2.textContent='Currently open.';}else{dot.classList.add('closed');txt.textContent='Currently closed · opens 9:00 AM';line2.textContent='Currently closed — opens 9:00 AM. Emergency service still available by phone.';}}catch(e){document.getElementById('openText').textContent='Open daily, 9:00 AM – 5:00 PM';}})();
+function buildSummary(){var n=document.getElementById('qName').value.trim()||'[Your name]';var b=document.getElementById('qBuilding').value;var r=document.getElementById('qRoof').value;var s=document.getElementById('qService').value;var m=document.getElementById('qMsg').value.trim();var t='Free estimate request — Quality Commercial Roofing\nName: '+n+'\nBuilding: '+b+'\nRoof type: '+r+'\nService needed: '+s+(m?'\nDetails: '+m:'')+'\nPlease call me to confirm inspection and pricing.';document.getElementById('summaryText').textContent=t;document.getElementById('summaryBox').style.display='block';document.getElementById('smsLink').href='sms:+18323527997?&body='+encodeURIComponent(t);document.getElementById('copyNote').textContent='';}
+function copySummary(){var t=document.getElementById('summaryText').textContent;if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){document.getElementById('copyNote').textContent='Copied — paste it into a call note, text, or email.';});}else{document.getElementById('copyNote').textContent='Copy the text above manually.';}}
+</script>
+</body>
+</html>
